@@ -1,0 +1,14 @@
+#
+# system.prop for lt02spr
+#
+# 8930 / 8960 RIL Basic
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/smd0
+
+ro.sf.hwrotation=270
+ro.yas.enable=true
+
+ro.telephony.default_network=8
+telephony.lteOnCdmaDevice=1
+persist.radio.snapshot_enabled=1
+persist.radio.snapshot_timer=22

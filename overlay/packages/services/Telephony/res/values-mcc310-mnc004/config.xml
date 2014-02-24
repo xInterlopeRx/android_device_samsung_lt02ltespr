@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2009 The Android Open Source Project
+<!-- Copyright (C) 2013 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,8 +14,14 @@
      limitations under the License.
 -->
 
+<!-- Telephony service resources that may need to be customized
+     for different hardware or product builds. -->
 <resources>
-    <!-- Sprint Message Wait Indicator Quirk -->
-    <bool name="sprint_mwi_quirk">true</bool>
+    <!-- Configure certain GsmUmtsOptions to be available or not. The
+         default values are in services/Telephony/res/values/config.xml
+         and maybe overridden in operator specific resource directories
+         or device specific overlays. -->
 
+    <bool name="config_operator_selection_expand" translatable="false">true</bool>
+    <bool name="config_prefer_2g" translatable="false">false</bool>
 </resources>

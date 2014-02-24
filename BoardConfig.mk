@@ -34,19 +34,9 @@ TARGET_KERNEL_VARIANT_CONFIG := cyanogen_lt02lte_spr_defconfig
 
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
-# Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF :=
-BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY :=
-BLUETOOTH_HCI_USE_MCT := true
-QCOM_BT_USE_SMD_TTY := true
-
-# WiFi
-WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/prima_wlan.ko"
-WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/prima_wlan/parameters/fwpath"
-WIFI_DRIVER_MODULE_NAME     := "prima_wlan"
-WIFI_DRIVER_MODULE_ARG      :=
-WIFI_DRIVER_MODULE_AP_ARG   :=
-WIFI_DRIVER_FW_PATH_P2P     :=
+# Camera's are terrible
+TARGET_NEED_DISABLE_AUTOFOCUS := true
+TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 
 # NFC
 BOARD_HAVE_NFC := true

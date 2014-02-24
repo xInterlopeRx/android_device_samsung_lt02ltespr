@@ -31,12 +31,12 @@ PRODUCT_COPY_FILES += \
 	device/samsung/lt02ltespr/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_Sitar
 
 # Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.carrier.rc:root/init.carrier.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.target.rc:root/init.target.rc
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/rootdir/etc/init.carrier.rc:root/init.carrier.rc \
+#    $(LOCAL_PATH)/rootdir/etc/init.target.rc:root/init.target.rc
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.class_main.sh:system/etc/init.qcom.class_main.sh
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/rootdir/etc/init.qcom.class_main.sh:system/etc/init.qcom.class_main.sh
         	      
 # Permissions
 PRODUCT_COPY_FILES += \

@@ -16,31 +16,14 @@
 # Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/lt02ltespr/lt02ltespr-vendor.mk)
 
-$(call inherit-product, device/samsung/serrano-common/nfc.mk)
+$(call inherit-product, device/samsung/lt02ltexx-common/nfc.mk)
 
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/lt02ltespr/overlay
-
-# Media profile
-PRODUCT_COPY_FILES += \
-       device/samsung/lt02ltespr/media/media_profiles.xml:system/etc/media_profiles.xml
-
-# Sound profiles
-PRODUCT_COPY_FILES += \
-	device/samsung/lt02ltespr/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
-	device/samsung/lt02ltespr/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_Sitar
-
-# Ramdisk
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/rootdir/etc/init.carrier.rc:root/init.carrier.rc \
-#    $(LOCAL_PATH)/rootdir/etc/init.target.rc:root/init.target.rc
-
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/rootdir/etc/init.qcom.class_main.sh:system/etc/init.qcom.class_main.sh
-        	      
+       	      
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
-# Inherit from serrano-common
-$(call inherit-product, device/samsung/serrano-common/serrano-common.mk)
+# Inherit from lt02ltexx-common
+$(call inherit-product, device/samsung/lt02ltexx-common/lt02ltexx-common.mk)

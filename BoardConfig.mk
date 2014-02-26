@@ -20,8 +20,8 @@
 # definition file).
 #
 
-# Inherit from common serrano
--include device/samsung/serrano-common/BoardConfigCommon.mk
+# Inherit from common lt02ltexx
+-include device/samsung/lt02ltexx-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
 -include vendor/samsung/lt02ltespr/BoardConfigVendor.mk
@@ -30,7 +30,7 @@
 TARGET_OTA_ASSERT_DEVICE := lt02ltespr,SM-T217S
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := cyanogen_lt02lte_spr_defconfig
+#TARGET_KERNEL_VARIANT_CONFIG := cyanogen_lt02lte_spr_defconfig
 
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 

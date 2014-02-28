@@ -16,6 +16,8 @@
 # Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/lt02ltespr/lt02ltespr-vendor.mk)
 
+# Inherit from lt02ltexx-common
+$(call inherit-product, device/samsung/lt02ltexx-common/lt02ltexx-common.mk)
 $(call inherit-product, device/samsung/lt02ltexx-common/nfc.mk)
 
 # Device overlay
@@ -24,6 +26,3 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/lt02ltespr/overlay
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
-
-# Inherit from lt02ltexx-common
-$(call inherit-product, device/samsung/lt02ltexx-common/lt02ltexx-common.mk)

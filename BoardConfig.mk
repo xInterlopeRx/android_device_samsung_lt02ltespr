@@ -29,9 +29,6 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lt02ltespr,SM-T217S
 
-# Kernel
-#TARGET_KERNEL_VARIANT_CONFIG := cyanogen_lt02lte_spr_defconfig
-
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
 # Camera's are terrible

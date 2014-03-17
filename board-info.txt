@@ -1,1 +1,1 @@
-require version-bootloader=T217SVPUAMH9
+require version-bootloader=T217SVPUAMH9||T217SVPUANB8

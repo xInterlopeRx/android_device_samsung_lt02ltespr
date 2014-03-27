@@ -29,9 +29,7 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lt02ltespr,SM-T217S
 
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 
 # NFC
 BOARD_HAVE_NFC := true
-
-TARGET_BOARD_INFO_FILE ?= device/samsung/lt02ltespr/board-info.txt

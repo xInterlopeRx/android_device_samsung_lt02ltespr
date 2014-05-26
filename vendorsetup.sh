@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_lt02ltespr-userdebug
+add_lunch_combo carbon_lt02ltespr-userdebug
